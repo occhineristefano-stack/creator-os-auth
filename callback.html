@@ -1,0 +1,9 @@
+<!DOCTYPE html>
+<html><body>
+<h3>Copia questo code nel terminale:</h3>
+<pre id="out"></pre>
+<script>
+  const code = new URLSearchParams(window.location.search).get('code');
+  document.getElementById('out').textContent = code || 'Nessun code trovato';
+</script>
+</body></html>
